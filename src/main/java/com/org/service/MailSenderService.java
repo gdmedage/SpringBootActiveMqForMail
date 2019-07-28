@@ -32,10 +32,10 @@ public class MailSenderService {
    * @throws MailException
    */
   @Async
-  @JmsListener(destination = "xoriant.queue")
+  @JmsListener(destination = "active.queue")
   public void receiveMessage(MessageWrapper messageWrapper) {
 
-    String[] mailList = {"ganesh.medage@xoriant.com"};
+    String[] mailList = {"mail list array"};
     /*
      * This send() contains an Object of SimpleMailMessage as an Parameter
      */
