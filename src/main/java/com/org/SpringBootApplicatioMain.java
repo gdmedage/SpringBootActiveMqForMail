@@ -21,6 +21,6 @@ public class SpringBootApplicatioMain {
 
   @Bean
   public Queue queue() {
-    return new ActiveMQQueue("xoriant.queue");
+    return new ActiveMQQueue("active.queue");
   }
 }
